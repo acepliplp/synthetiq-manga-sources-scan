@@ -2,9 +2,7 @@ import {
   filterAllowedItems,
 } from "../../lib/content-safety/index.js";
 
-const BLOCKED_CATEGORIES = [
-  // Les catégories à bloquer seront définies ici
-];
+const BLOCKED_CATEGORIES = [];
 
 function filterResults(results) {
   return filterAllowedItems(results, BLOCKED_CATEGORIES);
